@@ -41,14 +41,19 @@ label {
   font-weight: 700;
   margin-bottom: 10px;
 }
-input {
+input,
+select {
   text-transform: uppercase;
   color: var(--dark-gray);
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
   border: solid thin var(--gray);
   border-radius: 5px;
   padding: 10px 20px;
+}
+input[type="text"]:focus,select:focus {
+  outline: none;
+  border: 2px solid var(--primary);
 }
 .state-btn {
   position: relative;
@@ -84,4 +89,9 @@ hr {
 }
 .invalid {
   border: 1px solid #ff0000;
+}
+
+.select-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
