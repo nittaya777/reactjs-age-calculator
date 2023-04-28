@@ -1,0 +1,87 @@
+:root {
+  --primary: #864cff;
+  --gray: #dfdfdf;
+  --light-gray: #f0f0f0;
+  --dark-gray: #898989;
+  --dark: #131313;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1 {
+  text-align: center;
+}
+.card {
+  background-color: #fff;
+  padding: 45px 50px;
+  border-radius: 30px;
+  border-bottom-right-radius: 120px;
+}
+.flex-container {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+label {
+  text-transform: uppercase;
+  color: var(--dark-gray);
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+input {
+  text-transform: uppercase;
+  color: var(--dark-gray);
+  font-size: 32px;
+  font-weight: 700;
+  border: solid thin var(--gray);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.state-btn {
+  position: relative;
+}
+.circle-btn {
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  cursor: pointer;
+}
+.circle-btn:hover {
+  background-color: var(--dark);
+}
+hr {
+  border-top: solid thin var(--gray);
+  margin: 40px 0;
+  margin-right: 80px;
+}
+
+.stats div {
+  font-size: 68px;
+  font-weight: 700;
+}
+.stats span {
+  color: var(--primary);
+}
+.invalid {
+  border: 1px solid #ff0000;
+}
